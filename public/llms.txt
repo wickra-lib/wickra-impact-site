@@ -1,0 +1,15 @@
+# Wickra Impact
+
+> The backtester that knows you would have moved the market — agent-based fills on the real historical L2 order book, so slippage is measured, not guessed, byte-identical across ten languages. Your order is walked through the actual recorded L2 order book, eating liquidity level by level, so the fill price is what the market would really have given you.
+
+Wickra Impact inherits the wickra-backtest engine 1:1 (its StrategySpec, RunRequest and BacktestReport) and replaces only the fill stage with an order-book-walk fill engine. A book model, a participation cap and a latency knob shape how aggressively the order consumes the book. A strategy's signals draw on the 514 indicators of the Wickra core. Usable in Rust, Python, Node.js, WASM, C, C++, C#, Go, Java and R over a JSON-over-C-ABI data API, plus a reference CLI. Released under the MIT OR Apache-2.0 license.
+
+## Source and packages
+- [GitHub](https://github.com/wickra-lib/wickra-impact): Source, issues, and releases.
+- [crates.io](https://crates.io/crates/wickra-impact): Rust crate.
+- [PyPI](https://pypi.org/project/wickra-impact/): Python package.
+- [npm](https://www.npmjs.com/package/wickra-impact): Node package.
+
+## Ecosystem
+- [Wickra](https://wickra.org): The core streaming-indicator library the ecosystem is built on.
+- [Docs](https://docs.wickra.org): Documentation for the Wickra core.
