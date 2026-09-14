@@ -21,4 +21,4 @@ println!("{:?}", report.stats);
 
 - [crates.io/crates/wickra-impact](https://crates.io/crates/wickra-impact) - [docs.rs](https://docs.rs/wickra-impact)
 - [Source & examples](https://github.com/wickra-lib/wickra-impact/tree/main/examples/rust)
-- [ImpactSpec & book model](https://github.com/wickra-lib/wickra-impact/blob/main/docs/SPEC.md)
+- [ImpactSpec & book model](https://github.com/wickra-lib/wickra-impact/blob/main/docs/IMPACT_MODELS.md)

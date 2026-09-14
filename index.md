@@ -16,7 +16,7 @@ hero:
       link: https://github.com/wickra-lib/wickra-impact
     - theme: alt
       text: ImpactSpec & book model
-      link: https://github.com/wickra-lib/wickra-impact/blob/main/docs/SPEC.md
+      link: https://github.com/wickra-lib/wickra-impact/blob/main/docs/IMPACT_MODELS.md
     - theme: alt
       text: API
       link: /api/rust
