@@ -1,25 +1,22 @@
 <p align="center">
-  <a href="https://impact.wickra.org"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/wickra-banner.webp?v=514" alt="Wickra Impact — scan thousands of symbols against a JSON condition tree" width="100%"></a>
+  <a href="https://impact.wickra.org"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/wickra-banner.webp?v=514-7" alt="Wickra Impact — the backtester that knows you would have moved the market — agent-based fills on the real historical L2 order book" width="100%"></a>
 </p>
 
 [![Built on Wickra](https://img.shields.io/badge/built%20on-wickra-3b82f6)](https://github.com/wickra-lib/wickra)
-[![Live demo](https://img.shields.io/badge/live%20demo-live.wickra.org-3b82f6)](https://live.wickra.org)
-[![Docs](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-impact/docs.svg)](https://docs.wickra.org)
+[![Docs](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-impact/docs.svg)](https://impact.wickra.org)
 [![License: MIT OR Apache-2.0](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-impact/license.svg)](https://github.com/wickra-lib/wickra-impact#license)
 [![Built with VitePress](https://img.shields.io/badge/built%20with-VitePress-5c73e7?logo=vite&logoColor=white)](https://vitepress.dev)
 
 ---
 
-Source for the Wickra Impact marketing site (**[impact.wickra.org](https://impact.wickra.org)**):
-hero, live in-browser WASM indicator demo, benchmarks, and per-language API
-overviews. Built with [VitePress](https://vitepress.dev).
+Source for the Wickra Impact site (**[impact.wickra.org](https://impact.wickra.org)**): hero, per-language API overviews, benchmarks and the in-browser indicator demo.
+Built with [VitePress](https://vitepress.dev).
 
 The structure mirrors [webpage](https://github.com/wickra-lib/webpage)
 (wickra.org) and [wickra-docs](https://github.com/wickra-lib/wickra-docs)
-(docs.wickra.org): shared header, footer, theme, badge pipeline, and workflows.
-Wickra Impact scans thousands of symbols in parallel against a JSON condition
-tree over 514 streaming indicators. The library itself is
-[`wickra-lib/wickra-impact`](https://github.com/wickra-lib/wickra-impact).
+(docs.wickra.org): shared header, footer, theme, badge pipeline and workflows.
+**Wickra Impact** — the backtester that knows you would have moved the market — agent-based fills on the real historical L2 order book. The library itself is
+[`wickra-lib/wickra-impact`](https://github.com/wickra-lib/wickra-impact); its README carries the install line and a quick start for every language.
 
 ## Develop
 
@@ -30,16 +27,25 @@ npm run build    # production build (also fails on dead internal links)
 npm run preview  # preview the production build
 ```
 
-The live demo loads the published [`wickra-wasm`](https://www.npmjs.com/package/wickra-wasm)
-bundle from npm, so it runs the real Wickra indicators in the browser.
+The demo page loads the published [`wickra-wasm`](https://www.npmjs.com/package/wickra-wasm)
+bundle from npm — the indicator core the product is built on — so it runs the real
+indicators in the browser.
+
+## What is kept current by workflow
+
+- **The released version** — the version menu in the nav, the Maven snippet on the landing page and the Java API page — is pulled hourly from [wickra-impact's latest release](https://github.com/wickra-lib/wickra-impact/releases/latest) by `sync-from-impact.yml`.
+- **The demo's `wickra-wasm` bundle** follows the core's latest release, refreshed by the same workflow (package.json and the lockfile together).
+- **The status badges** in the footer are snapshots refreshed hourly by `refresh-badges.yml`; the SVGs in `public/badges/` are generated, not edited.
+
+Everything else — the copy, the API pages, the benchmark figures (from the repository's `BENCHMARKS.md`) — is edited here by hand.
 
 ## Deploy
 
-Static build via Cloudflare Pages:
+Static build via Cloudflare Pages (Git integration, no deploy secret):
 
 - **Build command:** `npm run build`
 - **Output directory:** `.vitepress/dist`
-- **Node version:** 20
+- **Node version:** 22 (`.nvmrc`)
 
 Custom domain `impact.wickra.org` is configured in the Cloudflare Pages dashboard.
 
