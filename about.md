@@ -18,8 +18,8 @@ byte-for-byte identical report.
 - **Model the friction.** A book model, a participation cap and a latency knob shape
   how aggressively your order consumes the book, so you can stress a strategy against
   realistic execution.
-- **The same indicators.** A strategy's signals draw on the 514 indicators of the
-  Wickra core, exactly as a plain backtest would — Impact changes only how the orders
+- **The same indicators.** A strategy's signals draw on the 495 indicators the
+  backtest registry resolves, exactly as a plain backtest would — Impact changes only how the orders
   fill, not what they see.
 
 ## Why it exists

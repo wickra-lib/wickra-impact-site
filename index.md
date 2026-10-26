@@ -32,8 +32,8 @@ features:
     title: Model the friction
     details: "A book model, a participation cap and a latency knob shape how aggressively your order consumes the book — so you can stress a strategy against realistic execution, not a frictionless fantasy."
   - icon: 📈
-    title: The same 514 indicators
-    details: "A strategy's signals draw on any of the 514 indicators of the Wickra core, exactly as a plain backtest would — Impact changes only how the orders fill, not what they see."
+    title: The same 495 indicators
+    details: "A strategy's signals draw on any of the 495 indicators the backtest registry resolves, exactly as a plain backtest would — Impact changes only how the orders fill, not what they see."
   - icon: 🌐
     title: Ten languages, one report
     details: "The core is a JSON-over-C-ABI data API (Impact::command_json) in Rust, Python, Node.js, WASM, C, C++, C#, Go, Java and R. A developer in any language gets the same impact-aware report."
@@ -143,7 +143,7 @@ Construct an `Impact` from the JSON spec, then drive it with
 
 Wickra Impact is part of the [Wickra](https://wickra.org) ecosystem. It inherits
 the [`wickra-backtest`](https://github.com/wickra-lib/wickra-backtest) engine over
-the 514 indicators of [`wickra-core`](https://github.com/wickra-lib/wickra), and
+the 495 indicators its registry resolves from [`wickra-core`](https://github.com/wickra-lib/wickra), and
 changes only how orders fill — so a strategy sees exactly the same numbers, but
 pays the slippage it would really have paid.
 

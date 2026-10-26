@@ -1,7 +1,7 @@
 {
   "name": "Wickra Impact",
   "short_name": "Wickra Impact",
-  "description": "Parallel multi-symbol screening over 514 streaming indicators.",
+  "description": "The backtester that knows you would have moved the market — agent-based fills on the real historical L2 order book.",
   "icons": [
     { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
     { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
