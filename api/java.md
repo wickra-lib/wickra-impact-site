@@ -8,7 +8,7 @@ JSON spec and drive it with `command(json) -> json`.
 <dependency>
   <groupId>org.wickra</groupId>
   <artifactId>wickra-impact</artifactId>
-  <version>0.2.2</version>
+  <version>0.2.3</version>
 </dependency>
 ```
 
